@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>FCC Timestamp</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha256-7s5uDGW3AHqw6xtJmNNtr+OBRJUlgkNJEo78P4b0yRw= sha512-nNo+yCHEyn0smMxSswnf/OnX6/KwJuZTlNZBjauKhTK0c+zT+q5JOCx0UFhXQ6rJR9jg6Es8gPuD2uZcYDLqSw==" crossorigin="anonymous">
+  </head>
+  <body>
+
+    <div class="container-fluid">
+      <div class="page-header">
+        <h1 class="text-center">Timestamp API</h1>
+      </div>
+      <div class="row">
+        <div class="col-sm-6 text-center">
+          <h2>Takes this:</h2>
+          <code>fcc-timestamp.herokuapp.com/Janurary%201,%202016</code>
+          <h3> - or this - </h3>
+          <code>fcc-timestamp.herokuapp.com/1451628000000</code>
+        </div>
+        <hr class="visible-xs-block"/>
+        <div class="col-sm-6 text-center">
+          <h2>Outputs this:</h2>
+          <code>
+            {
+              unix: 1451628000000,
+              natural: "Janurary 1, 2016"
+            }
+          </code>
+        </div>
+      </div>
+      <hr />
+      <div class="row text-center">
+        <h2>If the input is not in one of the above formats returns:</h2>
+        <code>
+          {
+            unix: null,
+            natural: null
+          }
+        </code>
+      </div>
+    </div>
+
+  </body>
+
+</html>
