@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/MityaDSCH/fcc-timestamp#readme",
   "dependencies": {
-    "express": "^4.13.3"
+    "express": "^4.13.3",
+    "moment": "^2.10.6"
   }
 }
